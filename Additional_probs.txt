@@ -1,0 +1,19 @@
+ADDITIONAL EXERCISES
+
+Problem 1: I have a text document and want to know "What are the three most
+  common words in the text?"
+    Extension: Let's exclude the following: [I, you, he, she it, we, they a, an]
+
+  Step 1=> #simple Big picture goal immediately includes splitting the words and
+    indexing them as soon as the input is chomped, so we can then sort the words
+    and proceed with the process of excluding our array of #excluded_words,
+    and return an output of the remaining words in their occurring order of use
+    in the text.
+  Step 2=> The interface should be a simple indexing of an input from the user,
+    storage and be able to return a simple output to the user when queried for
+    the list of words.
+  Step 3=> small picture goal would be to create a simple output that represents
+    the possibilities of including a column for how many times each word occurs
+    to then simplify the output to the user.  In turn making it easier for the
+    user to retain the information.
+  Step 4=>
