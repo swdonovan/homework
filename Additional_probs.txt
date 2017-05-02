@@ -1,14 +1,13 @@
-ADDITIONAL EXERCISES
+#ADDITIONAL EXERCISES
 
-Problem 1: I have a text document and want to know "What are the three most
-  common words in the text?"
-    Extension: Let's exclude the following: [I, you, he, she it, we, they a, an]
+#Problem 1: I have a text document and want to know "What are the three most
+#  common words in the text?"
+#    Extension: Let's exclude the following: [I, you, he, she it, we, they a, an]
 
   Step 1=> #simple Big picture goal immediately includes splitting the words and
     indexing them as soon as the input is chomped, so we can then sort the words
-    and proceed with the process of excluding our array of #excluded_words,
-    and return an output of the remaining words in their occurring order of use
-    in the text.
+    and proceed with the process of removing the #excluded_words out of our array.
+
   Step 2=> The interface should be a simple indexing of an input from the user,
     storage and be able to return a simple output to the user when queried for
     the list of words.
@@ -16,4 +15,18 @@ Problem 1: I have a text document and want to know "What are the three most
     the possibilities of including a column for how many times each word occurs
     to then simplify the output to the user.  In turn making it easier for the
     user to retain the information.
-  Step 4=>
+  Step 4=> Achieving this goal will require the construction of another array,
+    or the reconstruction of the previous indexed array to then quantify those
+    repeated words.
+
+  Step 5=> aprob.rb (insert link when able)
+
+  Step 3=> The reconstruction will impose the problem that we possibly might
+    lose the ability to output the words in occurring order....or the user may
+    request the output be in numeric order &/or occurrence order.
+  Step 4 => With that in mind that may require the another quick reconstruction
+    of the indexed array to include the ability to sort either way with an
+    if/else conditional, dependent on the user requested input.(Possible whole
+    other bag of worms)
+
+HEHEHEHHE
