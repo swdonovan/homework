@@ -2,10 +2,10 @@ quitting = false
     puts "HELLO, THIS IS OFFICER ROD FARVA, MAY I TAKE YOUR ORDER? >>"
       answer1 = gets.chomp
   until quitting == true
-    if answer1.include? "goodbye, GOODBYE, GOODBYE!, goodbye!"
+    if answer1 == "GOODBYE!" || "GOODBYE".downcase!
       puts "ANYTHING ELSE I CAN HELP WITH?"
       answer2 = gets.chomp.downcase!
-      answer2.include? "goodbye"
+      answer2 == "GOODBYE!" || "GOODBYE".downcase!
       puts "THANKYOU FOR CALLING!"
       quitting = true
     elsif answer1.nil?
